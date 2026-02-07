@@ -2,7 +2,7 @@ const uploadBtn = document.getElementById("uploadBtn");
 const fileInput = document.getElementById("fileInput");
 const result = document.getElementById("result");
 
-const EXPIRY_SECONDS = 300;
+const EXPIRY_SECONDS = 1200;
 
 function getFileIcon(name) {
   if (name.endsWith(".pdf")) return "📄";
