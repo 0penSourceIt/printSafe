@@ -56,14 +56,21 @@ a {
 
 .linkRow {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-top: 6px;
     font-family: monospace;
     font-size: 13px;
+    width: 100%;
+}
+
+.linkRow a {
+    text-decoration: none;
 }
 
 .timerText {
     color: #94a3b8;
+    white-space: nowrap;
 }
 
 @media print {

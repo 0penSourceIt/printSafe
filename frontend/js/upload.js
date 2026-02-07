@@ -60,7 +60,7 @@ uploadBtn.addEventListener("click", async () => {
       <div><strong>${icon} ${file.name}</strong></div>
 
       <div class="linkRow">
-        <a href="viewer.html?token=${data.token}" target="_blank">
+      <a href="viewer.html?token=${data.token}" target="_blank" style="display:inline-block;">
           Open Print Link
         </a>
 
