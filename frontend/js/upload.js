@@ -23,7 +23,7 @@ function startTimer(element, linkEl) {
 
     if (remaining < 0) {
       clearInterval(interval);
-      element.textContent = "Link expired";
+      element.textContent = "Link Expired";
       linkEl.style.pointerEvents = "none";
       linkEl.style.opacity = "0.5";
     }
@@ -52,21 +52,25 @@ uploadBtn.addEventListener("click", async () => {
     const data = await res.json();
 
     const container = document.createElement("div");
-    container.style.marginBottom = "14px";
+    container.className = "fileRow";
 
     const icon = getFileIcon(file.name);
 
     container.innerHTML = `
-      <strong>${icon} ${file.name}</strong><br>
-      <a href="viewer.html?token=${data.token}" target="_blank">
-        Open Print Link
-      </a>
-      <div style="font-size:12px;color:#94a3b8;"></div>
+      <div><strong>${icon} ${file.name}</strong></div>
+
+      <div class="linkRow">
+        <a href="viewer.html?token=${data.token}" target="_blank">
+          Open Print Link
+        </a>
+
+        <span class="timerText"></span>
+      </div>
     `;
 
     result.appendChild(container);
 
-    const timerEl = container.querySelector("div");
+    const timerEl = container.querySelector(".timerText");
     const linkEl = container.querySelector("a");
 
     startTimer(timerEl, linkEl);

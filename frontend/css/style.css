@@ -48,6 +48,24 @@ a {
     text-align: left;
 }
 
+.fileRow {
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #334155;
+}
+
+.linkRow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.timerText {
+    color: #94a3b8;
+}
+
 @media print {
     body * {
         visibility: hidden;
