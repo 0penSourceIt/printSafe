@@ -54,18 +54,16 @@ a {
     border-bottom: 1px solid #334155;
 }
 
-.linkRow {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 6px;
-    font-family: monospace;
-    font-size: 13px;
-    width: 100%;
+.fileName {
+    margin-bottom: 4px;
 }
 
-.linkRow a {
-    text-decoration: none;
+.linkRow {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    font-family: monospace;
+    font-size: 13px;
 }
 
 .timerText {
