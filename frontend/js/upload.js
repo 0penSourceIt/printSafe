@@ -57,12 +57,14 @@ uploadBtn.addEventListener("click", async () => {
     const icon = getFileIcon(file.name);
 
     container.innerHTML = `
-      <div><strong>${icon} ${file.name}</strong></div>
+      <div class="fileName">
+          <strong>${icon} ${file.name}</strong>
+        </div>
 
-      <div class="linkRow">
-      <a href="viewer.html?token=${data.token}" target="_blank" style="display:inline-block;">
-          Open Print Link
-        </a>
+        <div class="linkRow">
+          <a href="viewer.html?token=${data.token}" target="_blank">
+            Open Print Link
+          </a>
 
         <span class="timerText"></span>
       </div>
