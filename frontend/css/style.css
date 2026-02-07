@@ -16,6 +16,10 @@ body {
     width: 90%;
     max-width: 420px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.fileName {
+    margin-bottom: 4px;
     text-align: center;
 }
 
